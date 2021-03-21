@@ -1,0 +1,8 @@
+@media (min-width: 1200px){
+    .movieApp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+        margin-top: 2em;
+    }
+}

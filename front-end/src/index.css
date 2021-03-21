@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+:root {
+	--black-bg: rgba(0, 0, 0, 0.76);
+	--black: #000000;
+	--white: #f4f3ee;
+	--btn-bg: #e2bb56;
+	--btn-txt: #000000;
+	--gold: #e2bb56;
+	--dark-red: #5a0001;
+	--main-ff: 'Lato', sans-serif;
+	--heading-ff: 'Alfa Slab One', cursive;
+	--fw-bold: 700;
+	--fw-normal: 400;
+	--fw-light: 300;
+}
+
+* {
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+}
+
+body {
+	background: url("./imgs/movie-theatre.jpeg");
+	color: var(--white);
+	margin: 0;
+	font-family: var(--main-ff), sans-serif;
+	font-size: 1.125rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 1em;
+	text-align: center;
+}
+
+button,
+input {
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	transition: .25s all;
+}
+
+/*all have this*/
+.container {
+	background: var(--black-bg);
+	border: 2px solid var(--dark-red);
+	border-radius: 20px;
+	font-size: 1.25rem;
+	padding: 1rem;
+}
+.flexContainer {
+	position: relative;
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.searchResult::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30%;
+	background: var(--white);
+	bottom: 0;
+	left: 35%;
+}
+.flexContainer:last-child {
+	padding-bottom: 0;
+}
+.flexContainer:last-child::after {
+	display: none;
+}
+
+.flexContainer span {
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+@media (min-width: 650px) {
+	.flexContainer {
+		padding-bottom: .5em;
+	}
+	.flexContainer::after {
+		display: none;
+	}
+}
+
+
+/*desktop*/
+@media (min-width: 650px) {
+	.flexContainer {
+		display: grid;
+		align-items: baseline;
+		grid-gap: 2rem;
+		grid-template-columns: 2fr 1fr 1fr;
+		width: 100%;
+	}
+	.flexContainer * {
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	/*extra picture for decoration*/
+	body::before {
+		background-image: url("./imgs/film.jpeg");
+		background-size: cover;
+		background-position: center;
+		border-radius: 50%;
+		content: "";
+		height: 60%;
+		opacity: .6;
+		position: absolute;
+		top: -25%;
+		right: -25%;
+		width: 60%;
+	}
+}

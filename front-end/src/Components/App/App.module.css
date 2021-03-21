@@ -1,0 +1,9 @@
+.app {
+ padding-top: 2em;
+}
+
+@media (min-width: 600px){
+  .app {
+    padding: 1.5em;
+  }
+}

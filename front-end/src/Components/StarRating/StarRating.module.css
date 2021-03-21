@@ -1,0 +1,26 @@
+
+.starRating
+{
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  max-height: 1em;
+  margin: 0 auto .25em;
+  max-width: 300px;
+}
+
+.star
+{
+  line-height: 0;
+  opacity: .6;
+  transition: .25s all;
+}
+.star:hover
+{
+  cursor: pointer;
+  opacity: 1;
+}
+.filled {
+  opacity: 1;
+  color: var(--gold);
+}

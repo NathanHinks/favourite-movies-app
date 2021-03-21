@@ -1,0 +1,20 @@
+.searchInput {
+    background: var(--white);
+    border: none;
+    border-bottom: 3px solid var(--white);
+    margin: .5em auto 1em;
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+}
+
+.searchInput:focus{
+    border-bottom: 3px solid var(--dark-red);
+    outline: none;
+}
+
+@media (min-width: 650px){
+    .searchInput {
+        margin: 1em auto 1.5em;
+    }
+}

@@ -1,0 +1,16 @@
+.filmList {
+    margin: 2em auto;
+}
+
+.favouriteFilmsHeading {
+    font-family: var(--heading-ff);
+    font-weight: var(--fw-light);
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+@media (min-width: 1200px){
+    .filmList {
+        margin: 0;
+    }
+}

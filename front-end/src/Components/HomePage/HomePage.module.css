@@ -1,0 +1,31 @@
+
+.headingContainer {
+	background: var(--black-bg);
+	border: 2px solid var(--dark-red);
+	border-radius: 20px;
+    max-width: 600px;
+	padding: 1rem;
+}
+
+.heading {
+	border-bottom: 1px solid var(--gold);
+	font-family: var(--heading-ff);
+	font-size: 3rem;
+	letter-spacing: 1px;
+	padding-bottom: .25em;
+	margin-bottom: .5em;
+
+}
+
+.subheading {
+	font-weight: var(--fw-light);
+	font-size: 1.5rem;
+	font-style: italic;
+	margin-bottom: 1.5em;
+}
+
+.subheading span {
+	color: var(--gold);
+    font-weight: var(--fw-normal);
+}
+

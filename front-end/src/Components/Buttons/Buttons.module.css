@@ -1,0 +1,41 @@
+/*all buttons*/
+.button {
+    background: var(--btn-bg);
+	border: 2px solid var(--btn-bg);
+    color: var(--btn-txt);
+	border-radius: 20px;
+	display: block;
+    font-size: .75rem;
+	margin: 0 auto;
+	padding: .5em 1em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.button:hover{
+    background: var(--btn-txt);
+    border: 2px solid var(--btn-bg);
+    color: var(--btn-bg);
+    cursor: pointer;
+}
+
+.signInButton,
+.signOutButton {
+    --btn-bg: #5a0001;
+    --btn-txt: #f4f3ee;
+    font-size: 1rem;
+}
+
+
+.signOutButton {
+	position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+/*desktop*/
+@media (min-width: 600px){
+    .signInButton{
+        margin-right: 0;
+    }
+}
