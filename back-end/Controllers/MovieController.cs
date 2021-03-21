@@ -38,8 +38,8 @@ namespace back_end.Controllers
             }
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> Delete([FromBody] int id)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {

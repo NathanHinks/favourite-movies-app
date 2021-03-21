@@ -33,7 +33,7 @@ public class MovieRepository : BaseRepository, IRepository<Movie>
     {
         using var connection = CreateConnection();
 
-        await connection.ExecuteAsync("DELETE FROM Movies WHERE Id = @id");
+        await connection.ExecuteAsync("DELETE FROM Movies WHERE Id = @id;", new {id});
     }
 }
 
